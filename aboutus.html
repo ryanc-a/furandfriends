@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fur & Friends | About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body class="bg-gradient-to-br from-pink-50 to-amber-50 text-gray-800">
+
+    <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-5 bg-white shadow-sm">
+    <img src="general/logo.jpg" 
+     alt="Fur & Friends Logo" 
+     class="h-30 w-auto max-h-24 object-contain">
+    <div class="space-x-8 font-medium">
+      <a href="index.html" class="hover:text-green-700">Home</a>
+       <div class="relative inline-block group">
+<!-- trigger -->
+    <button class="font-semibold transition-colors hover:text-emerald-600 px-2 py-2">
+      Shop ▾
+    </button>
+
+<!-- dropdown -->
+    <div
+      class="absolute left-0 mt-2 w-48 rounded-lg bg-white shadow-lg py-2
+             opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+             transition-all duration-150 ease-out z-50"
+    >
+      <a href="petproducts.html"
+         class="block w-full px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+        🐾 Pet Products
+      </a>
+      <a href="babyproducts.html"
+         class="block w-full px-4 py-2 text-gray-700 hover:bg-pink-50 hover:text-pink-600">
+        👶 Little Ones
+      </a>
+    </div>
+  </div>
+<!--Dropdown end-->
+      <a href="aboutus.html" class="hover:text-green-700">About us</a>
+       <!-- Contact Dropdown -->
+<div class="relative inline-block group">
+  <a href="#" class="hover:text-green-700 font-semibold">Contact ▾</a>
+
+  <!-- Dropdown -->
+  <div
+    class="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg py-3 w-72 text-sm border border-gray-200 z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200"
+  >
+  
+
+     <!-- File 1: General Contact -->
+    <div class="px-4 py-2 border-b hover:bg-green-50">
+      <p class="font-semibold text-gray-800">Business Email</p>
+      <p>Email:📧ff.furandfriends@gmail.com</p>
+      
+    </div>
+
+    <!-- File 2: Support -->
+    <div class="px-4 py-2 border-b hover:bg-pink-50">
+      <p class="font-semibold text-gray-800">Ethan Chetty</p>
+      <p>Phone:📱+27 76 850 1290</p>
+    </div>
+
+    <!-- File 3: Sales -->
+    <div class="px-4 py-2 border-b hover:bg-green-50">
+      <p class="font-semibold text-gray-800">Darryn Govender</p>
+      <p>Phone:📱+27 61 389 1796</p>
+    </div>
+
+    <!-- File 4: Office Address -->
+    <div class="px-4 py-2 hover:bg-pink-50">
+      <p class="font-semibold text-gray-800">Instagram📸</p>
+      <p>furandfriends_ptyltd</p>
+    </div>
+
+      <div class="px-4 py-2 hover:bg-green-50">
+      <p class="font-semibold text-gray-800">Tik Tok🎵</p>
+      <p>furandfriends0426</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Dropdown End -->
+      <a href="cart.html" class="hover:text-green-700">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 2.25h1.386a.75.75 0 0 1 .728.546l.56 2.107m0 0L6.75 14.25h10.5l2.25-9H4.924m0 0L3.75 6.75h16.5" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-[80vh] flex items-center justify-center text-center px-6" style="background-image: url('general/furandfriendsabout.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-20 max-w-3xl text-white">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+        Why Choose <span class="text-green-400">Fur & Friends</span>?
+      </h2>
+      <p class="text-lg md:text-xl mb-8 opacity-90">
+        Every family member deserves the best. From premium-quality pet essentials to safe and playful products for little ones, we bring love, care, and happiness to every home.
+      </p>
+      <a href="products.html" class="inline-block px-8 py-4 bg-green-600 text-white rounded-full text-lg font-semibold hover:bg-green-700 transition">
+        Shop Our Favorites →
+      </a>
+    </div>
+  </section>
+
+  <!-- About Sections with Single Long Image -->
+  <section class="max-w-6xl mx-auto py-20 px-6">
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <!-- Text Column -->
+      <div class="space-y-20">
+        <div>
+          <h3 class="text-3xl font-bold text-green-700 mb-4">Our Story</h3>
+          <p class="text-lg">Fur & Friends was founded with a passion for bringing joy, comfort, and care to both pets and their families. What began as a small idea—to create a one-stop destination for quality products that everyone in the family can enjoy—quickly grew into a trusted brand dedicated to nurturing happiness.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-green-700 mb-4">Our Mission</h3>
+          <p class="text-lg">To care for families one product at a time. We provide safe, reliable, and high-quality products that pets, kids, and parents alike can trust. Every product is chosen to foster well-being, joy, and memorable moments.</p>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-green-700 mb-4">Our Values</h3>
+          <p class="text-lg mb-6">We operate on a foundation of three playful and meaningful values:</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transform transition">
+              <div class="text-green-600 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h4 class="font-bold text-lg mb-1">Quality</h4>
+              <p>Durable, reliable, and excellent products for everyone.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transform transition">
+              <div class="text-green-600 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9" />
+                </svg>
+              </div>
+              <h4 class="font-bold text-lg mb-1">Safety</h4>
+              <p>Every product is tested to keep your little ones and pets safe.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transform transition">
+              <div class="text-green-600 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132m0 0L8.858 6.87m2.697 2.166L15.75 6.88m-1.73 4.288L12 21" />
+                </svg>
+              </div>
+              <h4 class="font-bold text-lg mb-1">Happiness</h4>
+              <p>Smiles, wagging tails, and joyful moments for all family members.</p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+      <!-- Single Long Image Column -->
+   <!-- Single Long Image Column -->
+<div class="hidden md:block">
+  <img 
+    src="general/print.jpg" 
+    alt="Collage of happy pets and families" 
+    class="rounded-2xl shadow-lg h-full w-full object-cover"
+  >
+</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center p-6 text-sm text-gray-600 border-t">
+    © 2025 Fur & Friends — Made with ❤️ for every little one.
+  </footer>
+
+</body>
+</html>

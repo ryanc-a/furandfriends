@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fur and Friends | Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-white shadow-md">
+    <h1 class="text-2xl font-bold text-pink-500">🐾 Fur and Friends</h1>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:text-pink-500">Home</a>
+       <div class="relative inline-block group">
+<!-- trigger -->
+    <button class="font-semibold transition-colors hover:text-emerald-600 px-2 py-2">
+      Shop ▾
+    </button>
+
+<!-- dropdown -->
+    <div
+      class="absolute left-0 mt-2 w-48 rounded-lg bg-white shadow-lg py-2
+             opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+             transition-all duration-150 ease-out z-50"
+    >
+      <a href="petproducts.html"
+         class="block w-full px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+        🐾 Pet Products
+      </a>
+      <a href="babyproducts.html"
+         class="block w-full px-4 py-2 text-gray-700 hover:bg-pink-50 hover:text-pink-600">
+        👶 Little Ones
+      </a>
+    </div>
+  </div>
+<!--Dropdown end-->
+      <a href="cart.html" class="hover:text-pink-500 font-semibold text-pink-600">Cart</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto py-12">
+    <h2 class="text-3xl font-bold mb-8 text-center">Your Cart</h2>
+
+    <div id="cartItems" class="space-y-4"></div>
+
+    <div class="mt-8 text-center">
+      <h3 id="totalPrice" class="text-xl font-bold mb-6"></h3>
+      <div class="flex justify-center gap-4">
+        <a href="products.html" class="px-6 py-3 border border-pink-500 text-pink-500 rounded-full hover:bg-pink-50 transition">
+          Continue Shopping
+        </a>
+        <button id="checkoutBtn" class="px-6 py-3 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartItems = document.getElementById("cartItems");
+    const totalPrice = document.getElementById("totalPrice");
+    const checkoutBtn = document.getElementById("checkoutBtn");
+
+    function renderCart() {
+      cartItems.innerHTML = "";
+      let total = 0;
+
+      if (cart.length === 0) {
+        cartItems.innerHTML = `
+          <div class="text-center text-gray-500">
+            Your cart is empty 😿
+            <div class="mt-4">
+              <a href="products.html" class="text-pink-500 font-semibold hover:underline">Browse Products</a>
+            </div>
+          </div>
+        `;
+        totalPrice.textContent = "";
+        checkoutBtn.disabled = true;
+        checkoutBtn.classList.add("opacity-50", "cursor-not-allowed");
+        return;
+      }
+
+      cart.forEach((item, index) => {
+        total += item.price;
+        const div = document.createElement("div");
+        div.className = "bg-white shadow p-4 rounded-lg flex justify-between items-center";
+        div.innerHTML = `
+          <div class="flex items-center gap-4">
+            <img src="${item.img}" class="w-20 h-20 rounded-lg object-cover">
+            <div>
+              <h3 class="font-semibold">${item.name}</h3>
+              <p class="text-pink-500 font-bold">R${item.price}</p>
+            </div>
+          </div>
+          <button onclick="removeItem(${index})" class="text-red-500 hover:text-red-700">Remove</button>
+        `;
+        cartItems.appendChild(div);
+      });
+
+      totalPrice.textContent = `Total: R${total}`;
+      checkoutBtn.disabled = false;
+      checkoutBtn.classList.remove("opacity-50", "cursor-not-allowed");
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
+    }
+
+    checkoutBtn.addEventListener("click", () => {
+      if (cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+      }
+      // redirect to checkout.html
+      window.location.href = "checkout.html";
+    });
+
+    renderCart();
+  </script>
+</body>
+</html>
