@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fur & Friends | Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="bg-gradient-to-br from-pink-50 to-amber-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-5 bg-white shadow-sm">
+    <img src="general/furandfriendslogo.jpg" 
+     alt="Fur & Friends Logo" 
+     class="h-30 w-auto max-h-24 object-contain">
+    <div class="space-x-8 font-medium">
+      <a href="index.html" class="hover:text-pink-700">Home</a>
+       <div class="relative inline-block group">
+<!-- trigger -->
+    <button class="font-semibold transition-colors hover:text-pink-600 px-2 py-2">
+      Shop ▾
+    </button>
+
+<!-- dropdown -->
+    <div
+      class="absolute left-0 mt-2 w-48 rounded-lg bg-white shadow-lg py-2
+             opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+             transition-all duration-150 ease-out z-50"
+    >
+      <a href="petproducts.html"
+         class="block w-full px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600">
+        🐾 Pet Products
+      </a>
+      <a href="babyproducts.html"
+         class="block w-full px-4 py-2 text-gray-700 hover:bg-pink-50 hover:text-pink-600">
+        👶 Little Ones
+      </a>
+    </div>
+  </div>
+<!--Dropdown end-->
+      <a href="aboutus.html" class="hover:text-pink-700">About us</a>
+      <a href="contact.html" class="hover:text-pink-700">Contact</a>
+      <a href="cart.html" class="hover:text-pink-700">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 2.25h1.386a.75.75 0 0 1 .728.546l.56 2.107m0 0L6.75 14.25h10.5l2.25-9H4.924m0 0L3.75 6.75h16.5" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-[url('general/babypage.jpg')] bg-cover bg-center bg-no-repeat h-[70vh] flex flex-col items-center justify-center text-white text-center px-6">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10">
+      <h2 class="text-5xl font-extrabold mb-4">Our Little One Essentials</h2>
+      <p class="text-lg max-w-2xl mx-auto mb-6">Discover essentials and treats for your furry friends and little ones.</p>
+      <a href="#baby-products" class="px-6 py-3 bg-pink-600 text-white rounded-full font-semibold hover:bg-pink-700 transition">Start Shopping</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto py-16 space-y-20 px-6">
+
+   
+
+    <!-- BABY PRODUCTS -->
+    <section id="baby-products">
+      <h2 class="text-4xl font-extrabold mb-8 text-center text-pink-600">👶 Baby Products</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/bib.jpg" alt="Baby Products" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Silicone Bib</h3>
+          <p class="text-gray-600 text-sm mb-2">Blue silicone bib with food catching pocket</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R50.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/booster.jpg" alt="Family" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Baby Booster Seat</h3>
+          <p class="text-gray-600 text-sm mb-2">Comfortable booster seat for dining.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R400.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/chair.jpg" alt="About Image" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Baby Feeding Chair</h3>
+          <p class="text-gray-600 text-sm mb-2">Comfortable feeding chair for babies.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R250.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/cradle.jpg" alt="Home Product" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Anti-Mosquito Baby Cradle</h3>
+          <p class="text-gray-600 text-sm mb-2">Protective cradle with mosquito netting.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R110.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/elephant.jpg" alt="Elephant Teddy" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Elephant Teddy</h3>
+          <p class="text-gray-600 text-sm mb-2">Soft and cuddly elephant teddy for babies.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R150.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/feeder.jpg" alt="Baby Feeder" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Baby Fruit Pacifier</h3>
+          <p class="text-gray-600 text-sm mb-2">Convenient feeder for easy feeding.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R50.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/feedingchair.jpg" alt="Feeding Chair Booster Seat" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Feeding Chair Booster Seat</h3>
+          <p class="text-gray-600 text-sm mb-2">Feeding chair for babies.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R500.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/feedingset.jpg" alt="Baby Feeding Set" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Baby Feeding Set</h3>
+          <p class="text-gray-600 text-sm mb-2">Complete feeding set for babies.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R110.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/gym.jpg" alt="Baby Gym Mat" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Play Mat Piano Gym</h3>
+          <p class="text-gray-600 text-sm mb-2">Soft and colorful gym mat for babies.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R150.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/nest.jpg" alt="Baby Nest Lounger" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Baby Nest Lounger</h3>
+          <p class="text-gray-600 text-sm mb-2">Cozy and comfortable nest for babies.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R265.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/play sofa.jpg" alt="Baby Play Sofa" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Baby Play Sofa</h3>
+          <p class="text-gray-600 text-sm mb-2">Soft and comfortable play sofa for babies.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R4000.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/portablefeedingchair.jpg" alt="Baby Portable Feeding Chair" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Baby Portable Feeding Chair</h3>
+          <p class="text-gray-600 text-sm mb-2">Convenient and adjustable feeding chair for babies.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R220.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/triangle.jpg" alt="Baby Triangle Play Mat" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Baby Triangle Play Mat</h3>
+          <p class="text-gray-600 text-sm mb-2">Soft and colorful triangle play mat for babies.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R300.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl p-5 flex flex-col justify-between items-center text-center transition transform hover:-translate-y-1 h-full">
+          <img src="baby/utensil.jpg" alt="Baby Utensil Set" class="rounded-xl mb-4 w-full h-44 object-cover">
+          <h3 class="font-semibold text-lg mb-1">Baby Utensil Set</h3>
+          <p class="text-gray-600 text-sm mb-2">Perfectly sized utensils for little hands.</p>
+          <p class="text-pink-600 font-bold mb-4 text-lg">R100.00</p>
+          <a href="#" class="px-5 py-2 bg-pink-500 text-white rounded-full font-medium hover:bg-pink-600 transition">Buy Now</a>
+        </div>
+
+       
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-pink-700 text-white text-center py-6 mt-20">
+    <p>&copy; 2025 Fur & Friends. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
